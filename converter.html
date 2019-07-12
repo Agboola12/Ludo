@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TEMPERATURE</title>
+	
+</head>
+<script>
+		
+function Convert ()
+     
+    { 
+     
+	  if (selA.value == "Farenheit" && selB.value == "Celsius") 
+	 	{
+	 		A.value = parseInt(i.value) + 273;
+	 	}
+	   if (selA.value == "Farenheit" && selB.value == "Kelvin")
+	    {
+	    	A.value = parseInt(i.value) * 100;
+	    }
+	  if (selA.value == "Farenheit" && selB.value == "Farenheit")
+	    {
+	    	A.value = parseInt(i.value) * 100;
+	    }
+	  if (selA.value == "Celsius" && selB.value == "Farenheit")
+	    {
+	    	A.value = parseInt(i.value) * 100;
+	    }
+	  if (selA.value == "Celsius" && selB.value == "Kelvin")
+	    {
+	    	A.value = parseInt(i.value) * 100;
+	    }
+	  if (selA.value == "Celsius" && selB.value == "Celsius")
+	    {
+	    	A.value = parseInt(i.value) + 273;
+	    }
+	  if (selA.value == "Kelvin" && selB.value == "Farenheit")
+	    {
+	    	A.value = parseInt(i.value) * 100;
+	    }
+	  if (selA.value == "Kelvin" && selB.value == "Celsius")
+	    {
+	    	A.value = parseInt(i.value) + 273;
+	    }
+	  if (selA.value == "Kelvin" && selB.value == "Kelvin")
+	    {
+	    	A.value = parseInt(i.value) * 100;
+	    }
+    }
+
+</script>
+
+</script>
+<body>
+	<table border="4" align="center"; height="100%">
+		
+		 <tr><td colspan="2" align="center"><h3>Temprature Converter</h3></td></tr>
+		<tr>
+			<td>
+				<select id="selA">
+					<option>Farenheit</option>
+					<option>Kelvin</option>
+					<option>Celsius</option>
+				</select>
+			</td>
+			<td><input type="text"  id="i"></td>
+		</tr>
+		<tr>
+	<td>TO</td>
+	</tr>
+
+				<tr>
+			<td>
+				<select id="selB">
+					<option>Farenheit</option>
+					<option>Kelvin</option>
+					<option>Celsius</option>
+				</select>
+			</td>
+			<td><input type="text"  id="A"></td>
+		</tr>
+		
+ 		<tr><td colspan="2" align="center"> <button onclick="Convert()">CONVERT</button></td></tr>
+ 
+</body>
+</html>
